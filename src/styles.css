@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.container{
+    @apply bg-neutral-dark-blue w-full h-3/4 px-5 py-10 rounded-t-xl text-center grid;
+}
+.heading{
+    @apply flex justify-between ;
+}
+.period{
+    @apply flex justify-between text-start md:grid md:text-center ;
+}
+.event-wrapper{
+    @apply flex place-items-end w-full  rounded-xl overflow-hidden;
+}
