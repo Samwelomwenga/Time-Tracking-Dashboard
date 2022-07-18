@@ -2,14 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 .container{
-    @apply bg-neutral-dark-blue w-full h-3/4 px-5 py-10 rounded-t-xl text-center grid;
+    @apply bg-neutral-dark-blue w-full h-4/5 px-5 pb-12 pt-6 rounded-t-xl text-center grid;
 }
 .heading{
-    @apply flex justify-between ;
+    @apply flex justify-between text-lg font-medium;
 }
 .period{
-    @apply flex justify-between text-start md:grid md:text-center ;
+    @apply flex justify-between text-start md:grid md:justify-start ;
+}
+.current-period{
+    @apply text-3xl md:text-5xl;
+}
+.last-period{
+    @apply opacity-60;
 }
 .event-wrapper{
-    @apply flex place-items-end w-full  rounded-xl overflow-hidden;
+    @apply flex place-items-end w-full  rounded-xl overflow-hidden md:text-left;
 }

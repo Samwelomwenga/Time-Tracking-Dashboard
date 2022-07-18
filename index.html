@@ -15,32 +15,35 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body class="bg-neutral-very-dark-blue text-neutral-pale-blue text-lg">
-<main class="mx-7 mt-6 grid gap-6 md:grid-cols-4 md:grid-rows-2">
-  <header class="bg-neutral-dark-blue rounded-lg overflow-hidden md:row-span-2">
-    <div class="bg-primary-blue flex align-middle gap-5 px-5 py-7 rounded-b-lg md:grid" >
-      <img class="w-16" src="images\image-jeremy.png" alt="image-jeremy">
+<body class="bg-neutral-very-dark-blue text-white font-normal">
+<main class="mx-7 mt-6 grid gap-6 md:grid-cols-4 md:grid-rows-2 md:mx-36 md:my-24">
+  <header class="bg-neutral-dark-blue rounded-lg overflow-hidden md:row-span-2 md:h-max">
+    <div class="bg-primary-blue flex align-middle gap-5 px-5 py-7 rounded-b-lg md:grid md:h-3/4" >
+      <img class="w-16 border-solid border-black border-2 mb-8 md:w-24" src="images\image-jeremy.png" alt="image-jeremy">
       <div >
         <p class="opacity-70">Report for</p>
-        <p class="text-2xl"> Jeremy <span class="inline-block">Robson</span></p>
+        <p class="text-2xl font-normal md:text-4xl"> Jeremy <span class="md:block md:mb-10">Robson</span></p>
       </div>
     </div>
-    <ul class="flex justify-around py-5 md:grid gap-4">
-      <li> Daily</li>
-      <li>Weekly</li>
-      <li>Monthly</li>
-    </ul>
+    <div class="">
+      <ul class="flex justify-around py-5  md:grid gap-4 md:justify-start md:pl-6 md:pb-14">
+        <li> Daily</li>
+        <li>Weekly</li>
+        <li>Monthly</li>
+      </ul>
+    </div>
   </header>
-  <section class="bg-primary-light-red-work event-wrapper">
+
+  <section class="bg-primary-light-red-work event-wrapper bg-[('images\icon-work.svg')] bg-right-top">
     <div class="container">
       <div class="heading" >
         <p>Work</p>
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period" >
-        <p><span>32</span><span>hrs</span>
+        <p class="current-period"><span>32</span><span>hrs</span>
         </p>
-        <p>
+        <p class="last-period">
           <span>Last Week-</span>
           <span>36hrs</span>
         </p>
@@ -54,9 +57,9 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period">
-        <p><span>32</span><span>hrs</span>
+        <p class="current-period"><span>32</span><span>hrs</span>
         </p>
-        <p>
+        <p  class="last-period">
           <span>Last Week-</span>
           <span>36hrs</span>
         </p>
@@ -70,9 +73,9 @@
         <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg> 
       </div>
       <div class="period">
-        <p><span>32</span><span>hrs</span>
+        <p class="current-period"><span>32</span><span>hrs</span>
         </p>
-        <p>
+        <p  class="last-period">
           <span>Last Week-</span>
           <span>36hrs</span>
         </p>
@@ -86,9 +89,9 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period" >
-        <p><span>32</span><span>hrs</span>
+        <p class="current-period"><span>32</span><span>hrs</span>
         </p>
-        <p>
+        <p class="last-period" >
           <span>Last Week-</span>
           <span>36hrs</span>
         </p>
@@ -102,9 +105,9 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
      </div>
       <div class="period">
-        <p><span>32</span><span>hrs</span>
+        <p class="current-period" ><span>32</span><span>hrs</span>
         </p>
-        <p>
+        <p class="last-period" >
           <span>Last Week-</span>
           <span>36hrs</span>
         </p>
@@ -118,9 +121,9 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period">
-        <p><span>32</span><span>hrs</span>
+        <p class="current-period"><span>32</span><span>hrs</span>
         </p>
-        <p>
+        <p  class="last-period">
           <span>Last Week-</span>
           <span>36hrs</span>
         </p>
