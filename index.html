@@ -27,9 +27,9 @@
     </div>
     <div class="">
       <ul class="flex justify-around py-5  md:grid gap-4 md:justify-start md:pl-6 md:pb-14">
-        <li data-selected ="false"> Daily</li>
-        <li data-selected ="true">Weekly</li>
-        <li data-selected ="false">Monthly</li>
+        <li class="daily" data-selected ="false"> Daily</li>
+        <li class="weekly" data-selected ="true">Weekly</li>
+        <li class="monthly" data-selected ="false">Monthly</li>
       </ul>
     </div>
   </header>
@@ -41,11 +41,10 @@
       <svg  width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period" >
-        <p class="current-period"><span>32</span><span>hrs</span>
+        <p class="current-period work-current">32hrs
         </p>
-        <p class="last-period">
-          <span>Last Week-</span>
-          <span>36hrs</span>
+        <p  class="last-period work-previous">
+          Last Week-36hrs
         </p>
       </div>
     </div>
@@ -57,11 +56,10 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period">
-        <p class="current-period"><span>32</span><span>hrs</span>
+        <p class="current-period play-current">10hrs
         </p>
-        <p  class="last-period">
-          <span>Last Week-</span>
-          <span>36hrs</span>
+        <p  class="last-period play-previous">
+          Last Week-8hrs
         </p>
       </div>
     </div>
@@ -73,11 +71,10 @@
         <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg> 
       </div>
       <div class="period">
-        <p class="current-period"><span>32</span><span>hrs</span>
+        <p class="current-period study-current">4hrs
         </p>
-        <p  class="last-period">
-          <span>Last Week-</span>
-          <span>36hrs</span>
+        <p  class="last-period study-previous ">
+          Last Week-7hrs
         </p>
       </div>
     </div>
@@ -89,11 +86,10 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period" >
-        <p class="current-period"><span>32</span><span>hrs</span>
+        <p class="current-period exercise-current">4hrs
         </p>
-        <p class="last-period" >
-          <span>Last Week-</span>
-          <span>36hrs</span>
+        <p  class="last-period exercise-previous">
+          Last Week-5hrs
         </p>
       </div>
     </div>
@@ -105,11 +101,10 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
      </div>
       <div class="period">
-        <p class="current-period" ><span>32</span><span>hrs</span>
+        <p class="current-period social-current">5hrs
         </p>
-        <p class="last-period" >
-          <span>Last Week-</span>
-          <span>36hrs</span>
+        <p  class="last-period social-previous">
+          Last Week-10hrs
         </p>
       </div>
     </div>
@@ -121,11 +116,10 @@
       <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
       </div>
       <div class="period">
-        <p class="current-period"><span>32</span><span>hrs</span>
+        <p class="current-period self-care-current">2hrs
         </p>
-        <p  class="last-period">
-          <span>Last Week-</span>
-          <span>36hrs</span>
+        <p  class="last-period self-care-previous">
+          Last Week-2hrs
         </p>
       </div>
     </div>
