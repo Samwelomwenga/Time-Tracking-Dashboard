@@ -1,33 +1,43 @@
 fetch("data.json")
 .then(Response => Response.json())
-.then(data =>{
-    const daily= document.querySelector('.daily');
-    const weekly= document.querySelector('.weekly');
-    const monthly= document.querySelector('.monthly');
+    .then(data => {
+        const daily = document.querySelector('.daily');
+        const weekly = document.querySelector('.weekly');
+        const monthly = document.querySelector('.monthly');
 
         //    WORK QUERYSELECTORS
-    const workPrevious= document.querySelector('.work-previous');
-    const workCurrent= document.querySelector('.work-current');
+        const workPrevious = document.querySelector('.work-previous');
+        const workCurrent = document.querySelector('.work-current');
 
-            //    PLAY QUERYSELECTORS
-    const playPrevious= document.querySelector('.play-previous');
-    const playCurrent= document.querySelector('.play-current');
+        //    PLAY QUERYSELECTORS
+        const playPrevious = document.querySelector('.play-previous');
+        const playCurrent = document.querySelector('.play-current');
 
         //    STUDY QUERYSELECTORS
-    const studyPrevious= document.querySelector('.study-previous');
-    const studyCurrent= document.querySelector('.study-current');
+        const studyPrevious = document.querySelector('.study-previous');
+        const studyCurrent = document.querySelector('.study-current');
 
-            //    EXERCISE QUERYSELECTORS
-    const exercisePrevious= document.querySelector('.exercise-previous');
-    const exerciseCurrent= document.querySelector('.exercise-current');
+        //    EXERCISE QUERYSELECTORS
+        const exercisePrevious = document.querySelector('.exercise-previous');
+        const exerciseCurrent = document.querySelector('.exercise-current');
     
         //    SOCIAL QUERYSELECTORS
-    const socialPrevious= document.querySelector('.social-previous');
-    const socialCurrent= document.querySelector('.social-current');
+        const socialPrevious = document.querySelector('.social-previous');
+        const socialCurrent = document.querySelector('.social-current');
 
-            //    SELF CARE QUERYSELECTORS
-    const selfCarePrevious= document.querySelector('.self-care-previous');
-    const selfCareCurrent= document.querySelector('.self-care-current');
+        //    SELF CARE QUERYSELECTORS
+        const selfCarePrevious = document.querySelector('.self-care-previous');
+        const selfCareCurrent = document.querySelector('.self-care-current');
+
+    //     data.map((datas) => {
+    //         for (const d of  datas.timeframes.daily) {
+    //             let { p, t } =d
+                
+    //         };
+    //         console.log(p)
+    //         console.log(datas.timeframes.daily);
+
+    // })
 
             //  DAILY
     daily.addEventListener("click",()=>{

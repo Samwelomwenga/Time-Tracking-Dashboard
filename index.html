@@ -1,141 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="public/styles.css">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="public/styles.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body class="bg-neutral-very-dark-blue text-white font-normal">
-<main class="mx-7 mt-6 grid gap-6 md:grid-cols-4 md:grid-rows-2 md:mx-36 md:my-24">
-  <header class="bg-neutral-dark-blue rounded-lg overflow-hidden md:row-span-2 md:h-max">
-    <div class="bg-primary-blue flex align-middle gap-5 px-5 py-7 rounded-b-lg md:grid md:h-3/4" >
-      <img class="w-16 rounded-full border-white border-4 mb-8 md:w-24" src="images\image-jeremy.png" alt="image-jeremy">
-      <div >
-        <p class="opacity-70">Report for</p>
-        <p class="text-2xl font-normal md:text-4xl"> Jeremy <span class="md:block md:mb-10">Robson</span></p>
-      </div>
-    </div>
-    <div class="">
-      <ul class="flex justify-around py-5  md:grid gap-4 md:justify-start md:pl-6 md:pb-14">
-        <li class="daily" data-selected ="false"> Daily</li>
-        <li class="weekly" data-selected ="true">Weekly</li>
-        <li class="monthly" data-selected ="false">Monthly</li>
-      </ul>
-    </div>
-  </header>
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <section class="bg-primary-light-red-work event-wrapper bg-[('images\icon-work.svg')] bg-right-top bg-blend-multiply">
-    <div class="container">
-      <div class="heading" >
-        <p>Work</p>
-      <svg  width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-      </div>
-      <div class="period" >
-        <p class="current-period work-current">32hrs
-        </p>
-        <p  class="last-period work-previous">
-          Last Week-36hrs
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="bg-primary-soft-blue-play event-wrapper">
-    <div class="container">
-      <div class="heading">
-        <p>Play</p>
-      <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-      </div>
-      <div class="period">
-        <p class="current-period play-current">10hrs
-        </p>
-        <p  class="last-period play-previous">
-          Last Week-8hrs
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="bg-primary-light-red-study event-wrapper ">
-    <div class="container">
-      <div class="heading" >
-        <p>Study</p>
-        <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg> 
-      </div>
-      <div class="period">
-        <p class="current-period study-current">4hrs
-        </p>
-        <p  class="last-period study-previous ">
-          Last Week-7hrs
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="bg-primary-lime-green-excercise event-wrapper">
-    <div class="container">
-      <div class="heading">
-        <p>Exercise</p>
-      <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-      </div>
-      <div class="period" >
-        <p class="current-period exercise-current">4hrs
-        </p>
-        <p  class="last-period exercise-previous">
-          Last Week-5hrs
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="bg-primary-violet-social event-wrapper">
-    <div class="container">
-     <div class="heading" >
-      <p>Social</p>
-      <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-     </div>
-      <div class="period">
-        <p class="current-period social-current">5hrs
-        </p>
-        <p  class="last-period social-previous">
-          Last Week-10hrs
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="bg-primary-soft-orange-self-care event-wrapper">
-    <div class="container">
-      <div class="heading" >
-        <p>Self Care</p>
-      <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
-      </div>
-      <div class="period">
-        <p class="current-period self-care-current">2hrs
-        </p>
-        <p  class="last-period self-care-previous">
-          Last Week-2hrs
-        </p>
-      </div>
-    </div>
-  </section>
-</main>
-  
- <!-- Work
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-neutral-very-dark-blue text-white font-normal">
+    <main
+      class="mx-7 mt-6 grid gap-6 md:grid-cols-4 md:grid-rows-2 md:mx-36 md:my-24"
+    >
+      <header
+        class="bg-neutral-dark-blue rounded-lg overflow-hidden md:row-span-2 md:h-max"
+      >
+        <div
+          class="bg-primary-blue flex align-middle gap-5 px-5 py-7 rounded-b-lg md:grid md:h-3/4"
+        >
+          <img
+            class="w-16 rounded-full border-white border-4 mb-8 md:w-24"
+            src="images\image-jeremy.png"
+            alt="image-jeremy"
+          />
+          <div>
+            <p class="opacity-70">Report for</p>
+            <p class="text-2xl font-normal md:text-4xl">
+              Jeremy <span class="md:block md:mb-10">Robson</span>
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <ul
+            class="flex justify-around py-5 md:grid gap-4 md:justify-start md:pl-6 md:pb-14"
+          >
+            <li class="daily" data-selected="false">Daily</li>
+            <li class="weekly" data-selected="true">Weekly</li>
+            <li class="monthly" data-selected="false">Monthly</li>
+          </ul>
+        </div>
+      </header>
+      <section
+        class="bg-primary-light-red-work event-wrapper bg-[url('/images/icon-work.svg')] "
+      >
+        <div class="container">
+          <div class="heading">
+            <p>Work</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="period">
+            <p class="current-period work-current">32hrs</p>
+            <p class="last-period work-previous">Last Week-36hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-soft-blue-play event-wrapper bg-[url('../images/icon-play.svg')] ">
+        <div class="container">
+          <div class="heading">
+            <p>Play</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="period">
+            <p class="current-period play-current">10hrs</p>
+            <p class="last-period play-previous">Last Week-8hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-light-red-study event-wrapper bg-[url('../images/icon-study.svg')]">
+        <div class="container">
+          <div class="heading">
+            <p>Study</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="period">
+            <p class="current-period study-current">4hrs</p>
+            <p class="last-period study-previous">Last Week-7hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-lime-green-excercise event-wrapper bg-[url('../images/icon-exercise.svg')]">
+        <div class="container">
+          <div class="heading">
+            <p>Exercise</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="period">
+            <p class="current-period exercise-current">4hrs</p>
+            <p class="last-period exercise-previous">Last Week-5hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-violet-social event-wrapper bg-[url('../images/icon-social.svg')]">
+        <div class="container">
+          <div class="heading">
+            <p>Social</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="period">
+            <p class="current-period social-current">5hrs</p>
+            <p class="last-period social-previous">Last Week-10hrs</p>
+          </div>
+        </div>
+      </section>
+      <section class="bg-primary-soft-orange-self-care event-wrapper bg-[url('../images/icon-self-care.svg')]">
+        <div class="container">
+          <div class="heading">
+            <p>Self Care</p>
+            <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                fill="#BBC0FF"
+                fill-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="period">
+            <p class="current-period self-care-current">2hrs</p>
+            <p class="last-period self-care-previous">Last Week-2hrs</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Work
   5hrs daily
   Previous - 7hrs daily
   32hrs weekly
   Previous - 36hrs weekly
   103hrs monthly
   Previous - 128hrs monthly -->
- 
 
-  <!-- Play
+    <!-- Play
   1hr daily
   Previous - 2hrs daily
   10hrs weekly
@@ -175,11 +218,12 @@
   7hrs monthly
   Previous - 11hrs monthly -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">SAMWEL OMWENGA</a>.
-  </div>
-  <script src="public/app.js"></script>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">SAMWEL OMWENGA</a>.
+    </div>
+    <script src="public/app.js"></script>
+  </body>
 </html>

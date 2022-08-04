@@ -16,6 +16,7 @@ module.exports = {
         "neutral-desaturated-blue": "hsl(235, 45%, 61%)",
         "neutral-pale-blue": "hsl(236, 100%, 87%)", 
       },
+      
     },
   },
   plugins: [],
