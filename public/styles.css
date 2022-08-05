@@ -657,8 +657,8 @@ video {
   background-color: hsl(43 84% 65% / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/icon-work\.svg\'\)\] {
-  background-image: url('/images/icon-work.svg');
+.bg-\[url\(\'\.\.\/images\/icon-work\.svg\'\)\] {
+  background-image: url('../images/icon-work.svg');
 }
 
 .bg-\[url\(\'\.\.\/images\/icon-play\.svg\'\)\] {
