@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://github.com/Samwelomwenga/Time-Tracking-Dashboard)
+- Live Site URL: [live site URL](https://samwelomwenga.github.io/Time-Tracking-Dashboard/)
 
 ## My process
 
@@ -69,6 +69,6 @@ I want to develop website which fetch online API and do computation with the dat
 
 ## Author
 
-- Website - [Samwel Omwenga](https://www.your-site.com)
+- Website - [Samwel Omwenga](https://62d58b2de0c280104dbc790b--splendid-bavarois-5ee1e8.netlify.app/)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Samwelomwenga)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Twitter - [@SamwelOmwenga97](https://twitter.com/SamwelOmwenga97)
